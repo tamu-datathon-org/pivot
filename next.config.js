@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/forms/:path*',
-        destination: '/:path*'
+        destination: '/api/forms/:path*'
       },
       {
         source: '/:path*',
@@ -11,4 +11,7 @@ module.exports = {
       }
     ]
   },
+  env: {
+    GATEKEEPER_URL: "https://tamudatathon.com/auth"
+  }
 }
