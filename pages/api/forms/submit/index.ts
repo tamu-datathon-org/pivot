@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { InfoBuilderDataFields } from "../../../utils/info-builder/model";
-import { buildInfo } from "../../../utils/info-builder";
-import { genGatekeeperUserInfo } from "../../../utils/auth";
+import { InfoBuilderDataFields } from "../../../../utils/info-builder/model";
+import { buildInfo } from "../../../../utils/info-builder";
+import { genGatekeeperUserInfo } from "../../../../utils/auth";
 
 const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScusM_V3vnM2bhqwvVwRxDWs6yvXwnNy2qwbJ43sA2fDfEgSA/viewform";
 const queryParamMapping = {
